@@ -27,14 +27,14 @@ public class Radio {
         if ((currentRadioStation + 1) <= maxRadioStation){
             this.currentRadioStation = currentRadioStation + 1;
         } else
-            this.currentRadioStation = 0;
+            this.currentRadioStation = minRadioStation;
     }
 
     public void previousRadioStation(){
         if ((currentRadioStation - 1) >= minRadioStation){
             this.currentRadioStation = currentRadioStation - 1;
         } else
-            this.currentRadioStation = 9;
+            this.currentRadioStation = maxRadioStation;
     }
 
     public int getCurrentRadioVolume() {
