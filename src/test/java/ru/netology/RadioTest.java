@@ -8,13 +8,6 @@ class RadioTest {
     Radio radio = new Radio();
 
     @Test
-    public void shouldSetMaxRadioChanel(){
-        Radio radio = new Radio(12);
-        assertEquals(12,radio.getMaxRadioStation());
-        System.out.println("Maximum radio station is #" + radio.getMaxRadioStation() + " now");
-    }
-
-    @Test
     public void shouldSetRadioChanel(){
         radio.setCurrentRadioStation(3);
         assertEquals(3,radio.getCurrentRadioStation());
@@ -86,4 +79,5 @@ class RadioTest {
             System.out.println(radio.getCurrentRadioVolume());
         }
     }
+
 }
