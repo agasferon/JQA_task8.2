@@ -15,6 +15,10 @@ public class Radio {
     public Radio() {
     }
 
+    public void setCurrentRadioVolume(int currentRadioVolume) {
+        this.currentRadioVolume = currentRadioVolume;
+    }
+
     public int getCurrentRadioStation() {
         return currentRadioStation;
     }
@@ -61,20 +65,8 @@ public class Radio {
         return;
     }
 
-    public int getMinRadioStation() {
-        return minRadioStation;
-    }
-
     public int getMaxRadioStation() {
         return maxRadioStation;
-    }
-
-    public int getMinVolumeRadio() {
-        return minVolumeRadio;
-    }
-
-    public int getMaxVolumeRadio() {
-        return maxVolumeRadio;
     }
 
 }
